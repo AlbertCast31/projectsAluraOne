@@ -46,6 +46,33 @@ function calcularPromedio(){
     return promedio;
 }
 
+// 7 creamos una función para encontrar el número más grande y el más pequeño de una lista
 
+function encontrarMinMax(){
+    let min=listaNumerosA[0];
+    let max=listaNumerosA[0];
+
+    for (let i=1; i<listaNumerosA.length; i++) {
+        if (listaNumerosA[i]< min) {
+            min=listaNumerosA[i];
+        }
+        if (listaNumerosA[i]> max){
+            max=listaNumerosA[i];
+        }
+    }
+    console.log("Número más pequeño", min);
+    console.log("Número más grande", max);
+}
+
+// 8 Creamos una función para sumar todos los elementos en una lista
+
+function sumarLista(){
+    let suma=0;
+    for (let i=0; i<listaNumerosA.length; i++){
+        suma +=listaNumerosA[i];
+    }
+    console.log("Suma total:", suma);
+    return suma;
+}
 
 
