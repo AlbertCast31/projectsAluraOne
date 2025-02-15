@@ -75,4 +75,33 @@ function sumarLista(){
     return suma;
 }
 
+// 9 creamos una función para encontrar la posición de un elemento en una lista
+function encontrarPosicion(elemento){
+    for (let i=0; i<listaNumerosA.length; i++){
+        if (listaNumerosA[i]===elemento){
+            console.log("Posicion de", elemento, ":", i);
+            return i;
+        }
+    }
+    console.log("Elemento", elemento, "no encontrado");
+    return -1;
+}
 
+// 10 Creamos una función para sumar 2 listas de igual tamaño elemento a elemento
+function sumarListas(){
+    let nuevaLista=[];
+    for (let i=0; i<listaNumerosA.length; i++){
+        nuevaLista.push(listaNumerosA[i] + listaNumerosB[i];)
+    }
+    console.log("Suma de listas:", nuevaLista);
+    return nuevaLista;
+}
+ // 11 Creamos una función para devolver una nueva lista con el cuadrado de cada número
+ Function cuadradoDeLista(){
+    let nuevaLista=[];
+    for (let i=0; i<listaNumerosA.length; i++){
+        nuevaLista.push(listaNumerosA[i] * listaNumerosA[i]);
+    }
+    console.log("Cuadrado de la lista:", nuevaLista);
+    return nuevaLista;
+ }
